@@ -3,6 +3,7 @@
     <div class="nav-brand">Live2D Hub</div>
     <div class="nav-links">
       <router-link to="/" class="nav-link">首页</router-link>
+      <router-link to="/model" class="nav-link">模型</router-link>
       <router-link to="/world" class="nav-link">世界</router-link>
       <router-link to="/group" class="nav-link">分组</router-link>
     </div>

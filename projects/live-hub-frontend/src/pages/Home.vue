@@ -1,25 +1,25 @@
 <template>
   <div class="home">
-    <NavigationBar />
+    <HeaderNavigation/>
     <main class="main-content">
       <ModelViewer
-        v-if="selectedModel"
-        :title="selectedModel.title"
-        :description="selectedModel.description"
-        :author="selectedModel.author"
-        :version="selectedModel.version"
+          v-if="selectedModel"
+          :title="selectedModel.title"
+          :description="selectedModel.description"
+          :author="selectedModel.author"
+          :version="selectedModel.version"
       />
       <ModelList
-        :models="models"
-        @select="handleModelSelect"
+          :models="models"
+          @select="handleModelSelect"
       />
     </main>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import NavigationBar from '../components/NavigationBar.vue'
+import {ref} from 'vue'
+import HeaderNavigation from '../components/HeaderNavigation.vue'
 import ModelViewer from '../components/ModelViewer.vue'
 import ModelList from '../components/ModelList.vue'
 
