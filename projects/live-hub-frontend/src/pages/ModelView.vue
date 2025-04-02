@@ -1,4 +1,5 @@
 <template>
+  <header-navigation/>
   <div class="model-page">
     <div class="filter-sidebar">
       <div class="filter-section">
@@ -34,6 +35,7 @@
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import ModelList from '../components/ModelList.vue'
+import HeaderNavigation from "@/components/HeaderNavigation.vue";
 
 const router = useRouter()
 

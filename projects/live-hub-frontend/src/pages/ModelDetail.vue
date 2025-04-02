@@ -1,4 +1,5 @@
 <template>
+  <header-navigation/>
   <div class="model-detail">
     <div class="model-preview">
       <div class="preview-placeholder">模型预览区域</div>
@@ -40,6 +41,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import HeaderNavigation from "@/components/HeaderNavigation.vue";
 
 const route = useRoute()
 const modelId = route.params.model_link

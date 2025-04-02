@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import Home from '@/pages/Home.vue';
-import ModelView from "@/pages/Model.vue";
+import ModelViewView from "@/pages/ModelView.vue";
 import ModelDetail from "@/pages/ModelDetail.vue";
 
 
@@ -13,7 +13,7 @@ const router = createRouter({
         },
         {
             path: '/model',
-            component: ModelView,
+            component: ModelViewView,
         },
         {
             path: '/model/:model_link',
